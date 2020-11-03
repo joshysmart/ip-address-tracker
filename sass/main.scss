@@ -1,0 +1,15 @@
+@import "config";
+@import "header-section";
+@import "map-section";
+
+body {
+ padding: 0;
+ margin: 0;
+ font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+ min-height: 100vh;
+ background: #000;
+ @include flex-it(column);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+ 
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>  
+  <div class="container">
+    <div class="wrapper">
+      <div class="header-section">
+        <h1>IP Address Tracker</h1>
+        <div class="search-bar">
+          <form class="search-form" action="" method="get">
+            <input type="text" name="search" id="search" class="search" placeholder="Search for any IP address or domain">
+            <button class="search-btn"><img src="./images/icon-arrow.svg" alt=""></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-section">
+        <div class="map-info">
+          <div class="info">
+            <p>IP Address</p>
+            <h3 class="ip-address">192.168.821.121</h3>
+          </div>
+          <div class="info">
+            <p>Location</p>
+            <h3 class="city">Brooklyn, KD 10001</h3>
+          </div>
+          <div class="info">
+            <p>Timezone</p>
+            <h3>Universal Coordinated Time <span class="timezone"></span></h3>
+          </div>
+          <div class="info">
+            <p>ISP</p>
+            <h3 class="isp">SpaceX Starlink</h3>
+          </div>
+        </div>
+        <div class="invalid-ip">
+          <h3>Please enter a valid ip address</h3>
+        </div>
+        <div id="mapid" class="map"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
