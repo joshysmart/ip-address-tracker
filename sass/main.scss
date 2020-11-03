@@ -7,9 +7,3 @@ body {
  margin: 0;
  font-family: 'Rubik', sans-serif;
 }
-
-.wrapper {
- min-height: 100vh;
- background: #000;
- @include flex-it(column);
-}

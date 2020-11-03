@@ -104,7 +104,7 @@
 
  @include media-lg {
   .map {
-   height: 60vh;
+   height: calc(100vh - 17.2rem);
   }
  }
 }
